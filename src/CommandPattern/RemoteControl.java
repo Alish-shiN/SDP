@@ -6,6 +6,6 @@ public class RemoteControl {
     }
 
     public void pressButton() {
-        command.execute();  // Когда нажимаем кнопку, выполняем команду
+        command.execute();
     }
 }

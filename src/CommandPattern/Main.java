@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        // Создаём лампу
-        Light lamp = new Light();
+        // Создаем компьютер
+        Computer computer = new Computer();
 
-        // Создаём команды для включения и выключения света
-        Command lightOn = new LightOnCommand(lamp);
-        Command lightOff = new LightOffCommand(lamp);
+        // Создаем команды
+        Command turnOn = new TurnOnCommand(computer);
+        Command turnOff = new TurnOffCommand(computer);
 
-        // Создаём пульт и настраиваем его для включения света
+        // Создаем пульт (отправитель команд)
         RemoteControl remote = new RemoteControl();
 
-        // Включаем свет
-        remote.setCommand(lightOn);
-        remote.pressButton();  // Output: Light is On
+        // Включаем компьютер
+        remote.setCommand(turnOn);
+        remote.pressButton();
 
-        // Выключаем свет
-        remote.setCommand(lightOff);
-        remote.pressButton();  // Output: Light is Off
+        // Выключаем компьютер
+        remote.setCommand(turnOff);
+        remote.pressButton();
     }
 }
