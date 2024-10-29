@@ -1,3 +1,6 @@
+package CommandPattern;
+
+
 public class Computer {
     public void turnOn() {
         System.out.println("Компьютер включен");

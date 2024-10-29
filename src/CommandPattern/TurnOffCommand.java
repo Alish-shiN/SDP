@@ -1,3 +1,5 @@
+package CommandPattern;
+
 public class TurnOffCommand implements Command {
     private Computer computer;
 
@@ -5,6 +7,7 @@ public class TurnOffCommand implements Command {
         this.computer = computer;
     }
 
+    @Override
     public void execute() {
         computer.turnOff();
     }
