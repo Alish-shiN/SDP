@@ -4,11 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserViewModel {
-    private final List<UserModel> users;
+    private final List<UserModel> users = new ArrayList<>();
 
-    public UserViewModel() {
-        users = new ArrayList<>();
-    }
 
     public void addUser(String name) {
         users.add(new UserModel(name));

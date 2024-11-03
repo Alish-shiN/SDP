@@ -1,10 +1,10 @@
 package MVVM.Part2;
-
 import java.util.List;
 import java.util.Scanner;
 
 public class UserView {
     private final Scanner scanner = new Scanner(System.in);
+
 
     public int showMenu() {
         System.out.println("1. Add user");
@@ -15,7 +15,7 @@ public class UserView {
     }
 
     public String getUserInput() {
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
         System.out.print("Enter user name: ");
         return scanner.nextLine();
     }
@@ -26,6 +26,7 @@ public class UserView {
             System.out.println("- " + user);
         }
     }
+
 
     public void showMessage(String message) {
         System.out.println(message);
